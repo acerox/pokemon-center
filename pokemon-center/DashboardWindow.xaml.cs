@@ -23,5 +23,9 @@ namespace pokemon_center
         {
             InitializeComponent();
         }
+
+
+
+
     }
 }

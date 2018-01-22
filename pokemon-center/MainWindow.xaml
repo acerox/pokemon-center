@@ -5,11 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pokemon_center"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="200">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="38,106,0,0" TextWrapping="Wrap" Text="contraseña" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="38,57,0,0" TextWrapping="Wrap" Text="usuario" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Conectar" HorizontalAlignment="Left" Margin="83,155,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        Title="MainWindow" Height="368" Width="322">
+    <Grid OpacityMask="White">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.775">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF88A478" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Height="30" Margin="52,37,52,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" UseLayoutRounding="False" VerticalScrollBarVisibility="Disabled" FontFamily="Lucida Calligraphy" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Content="Acceder" Margin="186,130,53,0" VerticalAlignment="Top" Click="Button_Click" Height="37" FontFamily="Lucida Bright" FontSize="14" Background="#FFDDDDDD">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF384983" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <TextBox Height="30" Margin="52,85,52,0" TextWrapping="Wrap" Text="Contraseña" VerticalAlignment="Top" UseLayoutRounding="False" VerticalScrollBarVisibility="Disabled" FontFamily="Lucida Calligraphy" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
     </Grid>
 </Window>

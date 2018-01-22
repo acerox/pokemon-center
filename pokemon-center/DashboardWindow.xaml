@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pokemon_center"
         mc:Ignorable="d"
-        Title="DashboardWindow" Height="300" Width="300">
+        Title="DashboardWindow" Height="417" Width="459">
     <Grid>
-        
+        <Grid.Background>
+            <SolidColorBrush Color="#FF71998F" Opacity="0.54"/>
+        </Grid.Background>
+        <Button Content="Entrenador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype">
+            <Button.Background>
+                <SolidColorBrush Color="#FFFFF7D1" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Pokemon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="130,0,0,0">
+            <Button.Background>
+                <SolidColorBrush Color="#FFE86565" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Tienda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="260,0,0,0">
+            <Button.Background>
+                <SolidColorBrush Color="#FFCAD3E6" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <DataGrid Height="304" Margin="5,61,5,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Image x:Name="salir" Margin="398,10,5,330" Source="imagenes/61208.png" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
     </Grid>
 </Window>
