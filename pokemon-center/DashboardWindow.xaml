@@ -7,26 +7,31 @@
         mc:Ignorable="d"
         Title="DashboardWindow" Height="417" Width="459">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="315*"/>
+            <ColumnDefinition Width="83*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <SolidColorBrush Color="#FF71998F" Opacity="0.54"/>
         </Grid.Background>
-        <Button Content="Entrenador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype">
+        <Button Content="Entrenador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Grid.ColumnSpan="2">
             <Button.Background>
                 <SolidColorBrush Color="#FFFFF7D1" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button Content="Pokemon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="130,0,0,0">
+        <Button Content="Pokemon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="77,0,0,0" Grid.Column="1">
             <Button.Background>
                 <SolidColorBrush Color="#FFE86565" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button Content="Tienda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="260,0,0,0">
+        <Button Content="Tienda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="207,0,0,0" Grid.ColumnSpan="2" Grid.Column="1">
             <Button.Background>
                 <SolidColorBrush Color="#FFCAD3E6" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <DataGrid Height="304" Margin="5,61,5,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Image x:Name="salir" Margin="398,10,5,330" Source="imagenes/61208.png" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <DataGrid Height="304" Margin="5,61,5,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
+        <Image x:Name="salir" Margin="30,10,5,330" Source="imagenes/61208.png" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2"/>
 
     </Grid>
 </Window>

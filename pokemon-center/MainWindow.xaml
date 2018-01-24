@@ -18,7 +18,7 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="textoUsuario" Height="30" Margin="52,37,52,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" UseLayoutRounding="False" VerticalScrollBarVisibility="Disabled" FontFamily="Lucida Calligraphy" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="botonAcceder" Content="Acceder" Margin="186,130,53,0" VerticalAlignment="Top" Click="Button_Click" Height="37" FontFamily="Lucida Bright" FontSize="14" Background="#FFDDDDDD">
+        <Button x:Name="botonAcceder" Content="Acceder" Margin="186,130,53,0" VerticalAlignment="Top" Height="37" FontFamily="Lucida Bright" FontSize="14" Background="#FFDDDDDD" Click="botonAcceder_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -30,7 +30,7 @@
             </Button.BorderBrush>
         </Button>
         <TextBox x:Name="textoContraseña" Height="30" Margin="52,85,52,0" TextWrapping="Wrap" Text="Contraseña" VerticalAlignment="Top" UseLayoutRounding="False" VerticalScrollBarVisibility="Disabled" FontFamily="Lucida Calligraphy" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="botonRegistro" Content="Registrarse" Margin="52,130,167,0" VerticalAlignment="Top" Click="Button_Click" Height="37" FontFamily="Lucida Bright" FontSize="14" Background="#FFDDDDDD">
+        <Button x:Name="botonRegistro" Content="Registrarse" Margin="52,130,167,0" VerticalAlignment="Top" Height="37" FontFamily="Lucida Bright" FontSize="14" Background="#FFDDDDDD">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
