@@ -1,32 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-//añadimos los import de mysql
+﻿//añadimos los import de mysql
 
-using System.Data.Odbc;
-using MySql.Data.Types;
 using MySql.Data.MySqlClient;
+using System;
 using System.Data;
+using System.Windows;
 
 
 
 namespace pokemon_center
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para LoginWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
             
         // este es el ejemplo que conectara con una bbdd de mysql
@@ -61,7 +47,7 @@ namespace pokemon_center
 
 
 
-        public MainWindow()
+        public LoginWindow()
         {
             InitializeComponent();
             conexion = new MySqlConnection("Server = 127.0.0.1; Database = pokemon-center; Uid = root; Pwd =; Port = 3306");
