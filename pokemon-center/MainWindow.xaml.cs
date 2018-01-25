@@ -96,5 +96,7 @@ namespace pokemon_center
                 MessageBox.Show("Usuario y/o contraseña incorrectos");
             }                       
         }
+
+
     }
 }
