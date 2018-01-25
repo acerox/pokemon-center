@@ -55,9 +55,13 @@ namespace pokemon_center
                 {
                     try
                     {
-                        comando = new MySqlCommand("INSERT INTO nurse(id_center, username, password) VALUES (" + textoIdCentro.Text + ",'" + textoNombre.Text + "','" + textoContrasena.Text + "'", conexion);
+                        String hola = "INSERT INTO nurse(id_center, username, password) VALUES(" + Convert.ToInt32(textoIdCentro.Text) + ", '" + textoNombre.Text + "', '" + textoContrasena.Text + "')";
+                        comando = new MySqlCommand(hola, conexion);
+                        //MessageBox.Show(hola);
                         comando.ExecuteNonQuery();
                         MessageBox.Show("Usuario registrado");
+                        this.Hide();
+                        new LoginWindow().Show();
                     }
                     catch (Exception ex) { MessageBox.Show("No ha sido posible registrar al usuario" + ex.ToString()); }
 
