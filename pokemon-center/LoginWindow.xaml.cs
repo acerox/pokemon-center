@@ -54,8 +54,6 @@ namespace pokemon_center
             try
             {
                 conexion.Open();
-                MessageBox.Show("Conexion a la bbdd realizada");
-
             }
             catch (Exception ex){
                 MessageBox.Show("No se pudo conectar a la bbdd" + ex.ToString());
@@ -75,7 +73,8 @@ namespace pokemon_center
             {
                 this.Hide();
                 new TrainerWindow().Show();
-                
+                conexion.Close();
+
             }
             else
             {
@@ -87,6 +86,7 @@ namespace pokemon_center
         {
             this.Hide();
             new RegisterWindow().Show();
+            
         }
     }
 }

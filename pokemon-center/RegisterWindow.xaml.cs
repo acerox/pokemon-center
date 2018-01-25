@@ -62,6 +62,7 @@ namespace pokemon_center
                         MessageBox.Show("Usuario registrado");
                         this.Hide();
                         new LoginWindow().Show();
+                        conexion.Close();
                     }
                     catch (Exception ex) { MessageBox.Show("No ha sido posible registrar al usuario" + ex.ToString()); }
 

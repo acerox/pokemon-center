@@ -16,24 +16,23 @@
         <Grid.Background>
             <SolidColorBrush Color="#FF71998F" Opacity="0.54"/>
         </Grid.Background>
-        <Button Content="Entrenador" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="130" Height="66" VerticalAlignment="Top">
+        <Button x:Name="botonEntrenador" Content="Entrenador" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="130" Height="66" VerticalAlignment="Top" Click="botonEntrenador_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFFFF7D1" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button Content="Pokemon" HorizontalAlignment="Left" Width="130" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="76,0,0,0" Grid.Column="1" Height="66" VerticalAlignment="Top">
+        <Button x:Name="botonPokemon" Content="Pokemon" HorizontalAlignment="Left" Width="130" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="76,0,0,0" Grid.Column="1" Height="66" VerticalAlignment="Top" Click="botonPokemon_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFE86565" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button Content="Tienda" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="206,0,0,0" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Width="130" Height="66" VerticalAlignment="Top">
+        <Button x:Name="botonTienda" Content="Tienda" BorderThickness="1" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" FontFamily="Palatino Linotype" Margin="206,0,0,394" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Width="130" Height="66" VerticalAlignment="Bottom" Click="botonTienda_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFCAD3E6" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <DataGrid HorizontalContentAlignment="Center" Grid.ColumnSpan="4" HorizontalAlignment="Left" Width="445" Margin="0,128,0,0" Height="322" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
         <Image x:Name="salir" Margin="25,0,0,394" Source="imagenes/61208.png" Stretch="Fill" VerticalAlignment="Bottom" Grid.Column="3" Height="46" HorizontalAlignment="Left" Width="50"/>
-        <Button Content="NUEVO" HorizontalAlignment="Left" Margin="243,81,0,0" VerticalAlignment="Top" Width="132" Height="42" Grid.Column="1" Grid.ColumnSpan="3" FontSize="24" FontFamily="Perpetua">
+        <Button x:Name="botonNuevo" Content="NUEVO" HorizontalAlignment="Left" Margin="243,81,0,0" VerticalAlignment="Top" Width="132" Height="42" Grid.Column="1" Grid.ColumnSpan="3" FontSize="24" FontFamily="Perpetua">
             <Button.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -41,7 +40,7 @@
                 </LinearGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <TextBox HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="           Buscar Entrenador" Width="250" Grid.ColumnSpan="2" FontSize="24" VerticalContentAlignment="Center" FontFamily="Perpetua" Height="42" VerticalAlignment="Top">
+        <TextBox HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="           Buscar " Width="250" Grid.ColumnSpan="2" FontSize="24" VerticalContentAlignment="Center" FontFamily="Perpetua" Height="42" VerticalAlignment="Top">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -52,6 +51,7 @@
                 <ImageBrush Stretch="Uniform" Viewbox="0,0,5.2,1" ImageSource="imagenes/lupa.png"/>
             </TextBox.Background>
         </TextBox>
+        <DataGrid x:Name="menuTodo" HorizontalAlignment="Left" Height="307" Margin="0,153,0,0" VerticalAlignment="Top" Width="461" RenderTransformOrigin="-0.9,-0.18" Grid.ColumnSpan="4"/>
 
     </Grid>
 </Window>
