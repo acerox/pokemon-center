@@ -83,6 +83,10 @@ namespace pokemon_center
             }                       
         }
 
-
+        private void botonRegistro_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            new RegisterWindow().Show();
+        }
     }
 }
