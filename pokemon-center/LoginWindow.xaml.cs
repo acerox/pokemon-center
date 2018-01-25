@@ -74,7 +74,7 @@ namespace pokemon_center
             if (datos.Rows.Count == 1 )
             {
                 this.Hide();
-                new DashboardWindow().Show();
+                new TrainerWindow().Show();
                 
             }
             else

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace pokemon_center
 {
     /// <summary>
-    /// Lógica de interacción para DashboardWindow.xaml
+    /// Lógica de interacción para TrainerWindow.xaml
     /// </summary>
-    public partial class DashboardWindow : Window
+    public partial class TrainerWindow : Window
     {
-        public DashboardWindow()
+        public TrainerWindow()
         {
             InitializeComponent();
         }
