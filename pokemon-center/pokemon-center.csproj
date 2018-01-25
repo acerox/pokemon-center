@@ -69,7 +69,7 @@
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="DashboardWindow.xaml">
+    <Page Include="TrainerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,8 +81,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DashboardWindow.xaml.cs">
-      <DependentUpon>DashboardWindow.xaml</DependentUpon>
+    <Compile Include="TrainerWindow.xaml.cs">
+      <DependentUpon>TrainerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -122,6 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\61208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\lupa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="docs\MySqlTransaction.xml" />

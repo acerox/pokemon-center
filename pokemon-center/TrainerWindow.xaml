@@ -49,7 +49,7 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
             <TextBox.Background>
-                <ImageBrush ImageSource="imagenes/lupa.png" Stretch="Uniform" Viewbox="0,0,5.2,1"/>
+                <ImageBrush Stretch="Uniform" Viewbox="0,0,5.2,1" ImageSource="imagenes/lupa.png"/>
             </TextBox.Background>
         </TextBox>
 
