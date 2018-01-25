@@ -58,7 +58,7 @@ namespace pokemon_center
 
             }
             catch (Exception ex){
-                MessageBox.Show("No se pudo conectar a la bbdd" + comando.CommandText);
+                MessageBox.Show("No se pudo conectar a la bbdd" + ex.ToString());
             }
             
         }
